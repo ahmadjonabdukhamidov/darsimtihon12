@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background-color: var(--primary-color);
+  }
+  :root {
+    --primary-color: #bf6f13;
+    --secondary-color: #e88e27;
+  }
+  .container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-widht:900px) {
+    .header {
+        background-color: var(--secondary-color);
+        height: 180px;
+    }    
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+    .list li {
+        padding-top: 10px;
+    }
+    .input-btn {
+        width: 500px;
+    }
+  }
+}
+
